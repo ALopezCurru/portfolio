@@ -23,7 +23,7 @@ header {
   height: 15vh;
   position: sticky;
   inset: 0;
-  z-index: 999;
+  z-index: 99;
 }
 header > nav {
   width: 100%;
