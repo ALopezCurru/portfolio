@@ -54,7 +54,10 @@
   #introduccionFija {
     align-self: center;
 
-    width: 90%;
+    width: 100%;
+  }
+  #introduccionFija > p {
+    align-self: center;
   }
   #introduccionFija > h1 {
     font-size: 3rem;
