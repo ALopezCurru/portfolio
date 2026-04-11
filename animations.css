@@ -1,0 +1,38 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease;
+}
+#tituloIntroduccion.show {
+  transition-delay: 0.6s;
+}
+#introduccionFija {
+  z-index: 2;
+}
+#descripcionIntroduccion.show {
+  transition-delay: 0.8s;
+}
+
+#btnContactMeHero.show {
+  transition-delay: 1s;
+}
+
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.hidden-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.showAboutMe {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s ease;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts.css" />
     <link rel="stylesheet" href="./responsive.css" />
+    <link rel="stylesheet" href="./animations.css" />
   </head>
   <body>
     <!-- Nav -->
@@ -34,19 +35,19 @@
     </header>
     <main>
       <section id="hero">
-        <div id="introduccionFija">
-          <h1>Hello, I'm Alex!</h1>
-          <p>
+        <div id="introduccionFija" class="hidden">
+          <h1 id="tituloIntroduccion">Hello, I'm Alex!</h1>
+          <p id="descripcionIntroduccion">
             I'm a Real-Time Analyst with almost a year of experience analyzing
             operational data, building reports, and implementing automation to
             improve efficency.
           </p>
           <button id="btnContactMeHero">Contact Me!</button>
         </div>
-        <div id="imagenHero">
+        <div id="imagenHero" class="hidden">
           <img src="./Resources/Group 1.png" alt="" />
         </div>
-        <div id="stackPrincipalContenedor">
+        <div id="stackPrincipalContenedor" class="hidden">
           <img
             src="./Resources/img/Iconos/Gsheets.png"
             alt=""
@@ -70,8 +71,8 @@
         </div>
       </section>
       <section id="aboutMe">
-        <h1>About Me</h1>
-        <div id="paragraphs">
+        <h1 class="hidden-left">About Me</h1>
+        <div id="paragraphs" class="hidden-left">
           <p>
             Im a Real-Time Analyst with almost a year of experience analyzing
             operational data, building reports, and implementing automation to
@@ -89,7 +90,12 @@
             work-life balance.
           </p>
         </div>
+        <div id="contenedorStackAboutMe" class="hidden-right">
+          <h2>Stack</h2>
+          <div id="contenedorStack">hola</div>
+        </div>
       </section>
     </main>
   </body>
+  <script type="module" src="./main.js"></script>
 </html>

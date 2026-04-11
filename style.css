@@ -152,3 +152,22 @@ header > nav > ul {
   text-align: justify;
   margin-bottom: 1rem;
 }
+#contenedorStackAboutMe {
+  width: 90%;
+  height: 40vh;
+}
+#aboutMe > div > h2 {
+  font-family: var(--font-secondary);
+  align-self: start;
+}
+#contenedorStack {
+  width: 100%;
+  height: 30vh;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.imagenStack {
+  height: 20vh;
+}
