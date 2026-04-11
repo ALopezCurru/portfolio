@@ -21,6 +21,7 @@
     fill: white;
   }
   #hero {
+    height: auto;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
   }
