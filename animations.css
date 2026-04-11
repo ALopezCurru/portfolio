@@ -1,6 +1,6 @@
 .hidden {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(90px);
 }
 .show {
   opacity: 1;

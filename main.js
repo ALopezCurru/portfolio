@@ -2,6 +2,7 @@
 import { techStack } from "./stack.js";
 import { DOM } from "./domElements.js";
 
+//Animaciones Hero
 window.addEventListener("load", () => {
   const elements = document.querySelectorAll(".hidden");
   elements.forEach((el) => {
@@ -9,6 +10,7 @@ window.addEventListener("load", () => {
   });
 });
 
+// Mostrar stack en about me section
 function showStackTech(array) {
   const values = Object.values(array);
   let stack = "";
@@ -23,7 +25,7 @@ function showStackTech(array) {
   }
 }
 showStackTech(techStack);
-
+// Animaciones About Me
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
