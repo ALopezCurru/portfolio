@@ -7,12 +7,15 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  color: #e63946;
+}
 li {
   list-style: none;
-
   font-family: var(--font-primary);
   font-weight: 600;
 }
+
 .center {
   display: flex;
   align-items: center;
@@ -52,8 +55,68 @@ header > nav > ul {
 /* H - E - R - O */
 #hero {
   width: 100%;
-  height: 85vh;
+  min-height: 100vh;
+  height: auto;
   background: linear-gradient(to bottom, #0b0b0f, #1c243d);
   position: relative;
   color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#introduccionFija {
+  position: absolute;
+  top: 10vh;
+  left: 4vh;
+  width: 40%;
+}
+#introduccionFija > h1 {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 5rem;
+}
+#introduccionFija > p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+#imagenHero {
+  grid-column: 2;
+  height: auto;
+}
+#imageHero > img {
+  width: 100%;
+  height: 85vh;
+}
+#stackPrincipalContenedor {
+  grid-column: 3;
+}
+#btnContactMeHero {
+  margin-top: 1rem;
+  background-color: #e63946;
+  color: white;
+  font-family: var(--font-primary);
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  width: 50%;
+  height: 10vh;
+  font-size: 2rem;
+}
+
+#btnContactMeHero:hover {
+  cursor: pointer;
+  background-color: #b42e39;
+}
+
+#stackPrincipalContenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.imagenStackPrincipal {
+  width: 100%;
+  height: auto;
+  align-self: center;
 }

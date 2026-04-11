@@ -20,4 +20,40 @@
     height: 40px;
     fill: white;
   }
+  #hero {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #introduccionFija {
+    position: block;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #imagenHero {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  #imagenHero > img {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  #stackPrincipalContenedor {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  #introduccionFija {
+    align-self: center;
+
+    width: 90%;
+  }
+  #introduccionFija > h1 {
+    font-size: 3rem;
+  }
+  #introduccionFija > p {
+    font-size: 1rem;
+  }
+  #btnContactMeHero {
+    width: 90%;
+  }
 }
