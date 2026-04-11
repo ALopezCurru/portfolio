@@ -1,25 +1,32 @@
 @media (max-width: 768px) {
+  ul {
+    display: none;
+  }
   ul > li {
     display: none;
   }
   #containerLogoImage {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
   }
   #containerLogoImage > img {
-    width: 100%;
+    width: 60%;
   }
-  #menuSandwich {
+
+  /* #menuSandwich {
     display: block;
   }
   #menuSandwich > button {
     background-color: transparent;
     border: none;
-  }
-  .icon {
+  } */
+  /* .icon {
     width: 40px;
     height: 40px;
     fill: white;
-  }
+  } */
   #hero {
     height: auto;
     grid-template-columns: 100%;
@@ -27,6 +34,7 @@
   }
   #introduccionFija {
     position: block;
+    align-items: center;
     grid-row: 2;
     grid-column: 1;
   }
@@ -56,5 +64,10 @@
   }
   #btnContactMeHero {
     width: 90%;
+  }
+  .tarjetaProyecto {
+    width: auto;
+    min-width: 80%;
+    max-width: 90%;
   }
 }
