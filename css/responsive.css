@@ -38,6 +38,7 @@
     grid-row: 2;
     grid-column: 1;
     max-width: 90%;
+    left: 2.5vh;
   }
   #introduccionFija > h1 {
     text-align: center;
@@ -58,10 +59,11 @@
   }
   #introduccionFija {
     align-self: center;
-    width: 100%;
   }
   #introduccionFija > p {
+    
     align-self: center;
+    
   }
   #introduccionFija > h1 {
     font-size: 3rem;
@@ -98,5 +100,8 @@
   }
   #certificates > h1{
     font-size: 3rem;
+  }
+  #projects{
+    min-height: 50vh;
   }
 }
