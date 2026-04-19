@@ -41,33 +41,22 @@ function showProjects(array){
 }
 showProjects(projects);
 
+//Funcion para inspeccionar elementos despues de generarlos
+function inspeccionar(){
+  const elements = document.querySelectorAll(".hidden-left, .hidden-right");
+  elements.forEach((el) => observer.observe(el));
+}
+
 //Show experience
 function showExperience(array){
   const values = Object.values(array);
   let experience = "";
   DOM.contenedorExperience.innerHTML="";
-  for(let {id, title, startTime, endTime, description} of values){
-   if(Number(id) % 2 == 0){
+  for(let {id, title, startTime, endTime, description, animation} of values){
      experience = `
     
-     <div class="experienceCard">
-            <div class="experienceHead">
-              <h1>${title}</h1>
-              <h2 class="experienceDates">
-                <span class="experienceDateFrom">${startTime}</span> - <span class="experienceDateTo">${endTime}</span>
-              </h2>
-            </div>
-            <div class="experienceDescription">
-              <p>${description}</p>
-            </div>
-          </div>
-
-    `;
-   }else{
-     experience = `
-    
-     <div class="experienceCard ">
-            <div class="experienceHead">
+     <div class="experienceCard ${animation}">
+            <div class="experienceHead ">
               <h1>${title}</h1>
               <h2 class="experienceDates">
                 <span class="experienceDateFrom">${startTime}</span> - <span class="experienceDateTo">${endTime}</span>
@@ -80,9 +69,10 @@ function showExperience(array){
 
     `;
    
-   }
      DOM.contenedorExperience.insertAdjacentHTML("afterbegin", experience)
   }
+  inspeccionar();
 }
 
 showExperience(experience);
+  

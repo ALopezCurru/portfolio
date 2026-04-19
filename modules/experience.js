@@ -29,6 +29,16 @@ export const experience =[
         description:"Track real-time KPIs, create performance reports, and support operations through adherence alerts and workforce insights. Also assisted with scheduling adjustments, staffing recommendations, and vacation approvals."
     }
 ]
+
+experience.forEach(function(e){
+   if(Number(e.id) % 2 === 0){
+    e.animation= "hidden-left";
+   }else{
+    e.animation = "hidden-right"
+   }
+});
+
+
 /*
 TEMPLATE
  {
