@@ -15,6 +15,9 @@ li {
   font-family: var(--font-primary);
   font-weight: 600;
 }
+.hidden{
+  display: none;
+}
 
 .center {
   display: flex;
@@ -330,4 +333,91 @@ width: 100%;
 }
 .experienceDescription > p{
   text-align: center;
+}
+
+
+/* TEMPORAL */
+
+
+/* Contact me section */
+#modalContactForm{
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 35rem;
+  height: auto;
+  background-color: #1c243d;
+
+}
+#modalContactForm > h1{
+  font-family: var(--font-secondary);
+  font-size: 5rem;
+  color: white;
+}
+#containerContactMe{
+  width: 90%;
+  min-height: 25rem;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+   box-shadow: 1px 5px 10px black;
+   border-radius: 6px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  gap: 0.5rem;
+
+}
+
+input{
+  width: 70%;
+  min-height: 2rem;
+  border: none;
+  border-radius: 3px;
+  
+}
+input::placeholder{
+   font-family: var(--font-primary);  
+   font-weight: 400;
+}
+
+textarea{
+  width: 70%;
+  min-height: 4rem;
+  resize: none;
+  border: none;
+  border-radius: 3px;
+  font-family: var(--font-primary);
+}
+textarea::placeholder{
+  font-family: var(--font-primary);  
+   font-weight: 400;
+}
+.inputBtn{
+    background-color: #e63946;
+    color: white;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1rem;
+    border:none;
+}
+.inputBtn:hover{
+  cursor: pointer;
+  background-color: #a01f2a;
+}
+.comunicationChannels{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comunicationChannels > ul > li{
+  color: white;
 }

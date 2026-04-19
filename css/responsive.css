@@ -87,4 +87,15 @@
 
   font-size: 3rem;
 }
+#modalContactForm > h1{
+  font-size: 3rem;
+}
+#containerContactMe{
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+}
+.comunicationChannels > ul > li{
+  color: white;
+ 
+}
 }

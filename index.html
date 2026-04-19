@@ -19,7 +19,7 @@
         <ul class="center">
           <li><a href="#">About Me</a></li>
           <li><a href="#">Experience</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="contactMeForm">Contact</a></li>
           <li><a href="#">Projects</a></li>
           <!-- <li id="menuSandwich">
             <button>
@@ -33,7 +33,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="mainSection" >
       <section id="hero">
         <div id="introduccionFija" class="hidden">
           <h1 id="tituloIntroduccion">Hello, I'm Alex!</h1>
@@ -42,7 +42,7 @@
             operational data, building reports, and implementing automation to
             improve efficency.
           </p>
-          <button id="btnContactMeHero">Contact Me!</button>
+          <button id="btnContactMeHero" class="contactMeForm">Contact Me!</button>
         </div>
         <div id="imagenHero" class="hidden">
           <img src="./Resources/Group 1.png" alt="" />
@@ -129,7 +129,30 @@
           <!--  -->
         </div>
       </section>
-    </main>
+    </main> 
+    <div id="modalContactForm" class="center">
+      <h1>Contact Me</h1>
+      <div id="containerContactMe">
+        <div class="comunicationChannels">
+      <ul>
+          <li>
+            Email: example@example.com
+          </li>
+          <li>
+            Located: Quetzaltenango, Guatemala.
+          </li>
+      </ul>
+        </div>
+        <form action="#">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email Address">
+          <input type="text" name="" id="" placeholder="Phone Number">
+          <textarea name="" id="" placeholder="Message"></textarea>
+          <input class="inputBtn" type="submit"  value="Send Now!">
+          
+        </form>
+      </div>
+    </div>
   </body>
   <script type="module" src="./main.js"></script>
 </html>
