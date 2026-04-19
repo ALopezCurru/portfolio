@@ -62,7 +62,7 @@ header > nav > ul {
 #hero {
   max-width: 100%;
 
-  min-height: 40rem;
+  min-height: 35rem;
   height: auto;
   background: linear-gradient(to bottom, #0b0b0f, #1c243d);
   position: relative;    
@@ -304,8 +304,9 @@ width: 100%;
   min-height: 150px;
   border-radius: 10px;
   box-shadow: 1px 5px 10px black;
-  padding: 5px;
+  padding: 10px;
   background-color: transparent;
+  /* background-color: #a01f2a; */
 }
 .experienceHead{
   height: 40%;
@@ -331,14 +332,44 @@ width: 100%;
   align-items: center;
   justify-items: center;
 }
+
 .experienceDescription > p{
-  text-align: center;
+  margin-top: 2%;
+  text-align: justify;
 }
 
 
-/* TEMPORAL */
-
-
+/* Certificates */
+#certificates{
+  min-width: 100%;
+  min-height: 35rem;
+  height: auto;
+  background: linear-gradient(to bottom, #1c243d, #0b0b0f);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#certificates > h1{
+  font-family: var(--font-secondary);
+  font-size: 5rem;
+  color: white;
+}
+#certificatesContainer{
+  width: 90%;
+  min-height: 25rem;
+  height: auto;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: scroll;
+}
+#certificatesContainer > a > img{
+  width: 500px;
+  height: 22rem;
+}
 /* Contact me section */
 #modalContactForm{
   /* display: flex; */

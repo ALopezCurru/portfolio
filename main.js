@@ -4,6 +4,7 @@ import { DOM } from "./utils/domElements.js";
 import { observer, elements } from "./modules/animations.js";
 import { projects } from "./modules/projects.js"
 import { experience } from "./modules/experience.js";
+import { certificates } from "./modules/certificates.js";
 
 // Mostrar stack en about me section
 function showStackTech(array) {
@@ -76,3 +77,18 @@ function showExperience(array){
 
 showExperience(experience);
   
+
+// Mostrar certificados
+
+function showCertificates(array){
+  const values = Object.values(array);
+  let certificates = "";
+  DOM.certificateContainer.innerHTML = "";
+  for(let {id, title, issued, link, img} of values){
+    certificates = `
+    <a href="${link}" target="_blank"><img src="${img}" alt="${title}"></a>    
+    `;
+    DOM.certificateContainer.insertAdjacentHTML('afterbegin', certificates);
+  }
+}
+showCertificates(certificates)

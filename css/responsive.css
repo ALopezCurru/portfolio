@@ -39,9 +39,9 @@
     grid-column: 1;
     max-width: 90%;
   }
-#introduccionFija > h1{
-  text-align: center;
-}
+  #introduccionFija > h1 {
+    text-align: center;
+  }
 
   #imagenHero {
     grid-row: 1;
@@ -77,25 +77,23 @@
     min-width: 80%;
     max-width: 90%;
   }
-  #tituloAboutMe{
+  #tituloAboutMe {
     text-align: center;
   }
-  #containerLaboralExperience{
+  #containerLaboralExperience {
     grid-template-columns: repeat(1, 1fr);
   }
-  #experienceSection > h1{
-
-  font-size: 3rem;
-}
-#modalContactForm > h1{
-  font-size: 3rem;
-}
-#containerContactMe{
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-}
-.comunicationChannels > ul > li{
-  color: white;
- 
-}
+  #experienceSection > h1 {
+    font-size: 3rem;
+  }
+  #modalContactForm > h1 {
+    font-size: 3rem;
+  }
+  #containerContactMe {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .comunicationChannels > ul > li {
+    color: white;
+  }
 }
