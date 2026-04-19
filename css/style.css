@@ -233,6 +233,8 @@ header > nav > ul {
   gap: 1rem;
   background-color: #0b0b0f;
   flex-direction: column;
+  box-shadow: 1px 5px 10px black;
+  margin-left: 1%;
 }
 .tarjetaProyecto > img {
   border-radius: 10px 10px 0px 0px;
@@ -257,4 +259,75 @@ header > nav > ul {
   font-weight: 400;
   opacity: 40%;
   
+}
+
+.tarjetaProyecto:hover{
+ transform: scale(1.05);
+ /* margin-left: 1%; */
+ transition: all 0.5s ease;
+}
+
+/* experience section */
+#experienceSection{
+width: 100%;
+  min-height: 75vh;
+  height: auto;
+  background-color: #1c243d;
+  /* background-color: blue; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-top: 1px solid white; */
+}
+#experienceSection > h1{
+  font-family: var(--font-secondary);
+  font-size: 5rem;
+}
+#containerLaboralExperience{
+  width: 90%;
+  min-height: 300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5rem;
+}
+.experienceCard{
+  align-self: center;
+  place-self: center;
+  width: 90%;
+  height: auto;
+  min-height: 150px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 10px black;
+  padding: 5px;
+  background-color: transparent;
+}
+.experienceHead{
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.experienceHead > h1{
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+}
+.experienceHead > h2{
+  font-family: var(--font-secondary);
+  opacity: 50%;
+  font-size: 1rem;
+}
+.experienceDescription{
+  min-height: 60%;
+  height: auto;
+  font-family: var(--font-primary);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.experienceDescription > p{
+  text-align: center;
 }

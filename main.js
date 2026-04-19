@@ -3,6 +3,7 @@ import { techStack } from "./modules/stack.js";
 import { DOM } from "./utils/domElements.js";
 import { observer, elements } from "./modules/animations.js";
 import { projects } from "./modules/projects.js"
+import { experience } from "./modules/experience.js";
 
 // Mostrar stack en about me section
 function showStackTech(array) {
@@ -39,3 +40,30 @@ function showProjects(array){
   }
 }
 showProjects(projects);
+
+//Show experience
+function showExperience(array){
+  const values = Object.values(array);
+  let experience = "";
+  DOM.contenedorExperience.innerHTML="";
+  for(let {id, title, startTime, endTime, description} of values){
+    experience = `
+    
+     <div class="experienceCard">
+            <div class="experienceHead">
+              <h1>${title}</h1>
+              <h2 class="experienceDates">
+                <span class="experienceDateFrom">${startTime}</span> - <span class="experienceDateTo">${endTime}</span>
+              </h2>
+            </div>
+            <div class="experienceDescription">
+              <p>${description}</p>
+            </div>
+          </div>
+
+    `;
+    DOM.contenedorExperience.insertAdjacentHTML("afterbegin", experience)
+  }
+}
+
+showExperience(experience);

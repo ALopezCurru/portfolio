@@ -58,7 +58,6 @@
   }
   #introduccionFija {
     align-self: center;
-
     width: 100%;
   }
   #introduccionFija > p {
@@ -81,4 +80,11 @@
   #tituloAboutMe{
     text-align: center;
   }
+  #containerLaboralExperience{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #experienceSection > h1{
+
+  font-size: 3rem;
+}
 }
