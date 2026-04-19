@@ -47,7 +47,8 @@ function showExperience(array){
   let experience = "";
   DOM.contenedorExperience.innerHTML="";
   for(let {id, title, startTime, endTime, description} of values){
-    experience = `
+   if(Number(id) % 2 == 0){
+     experience = `
     
      <div class="experienceCard">
             <div class="experienceHead">
@@ -62,7 +63,25 @@ function showExperience(array){
           </div>
 
     `;
-    DOM.contenedorExperience.insertAdjacentHTML("afterbegin", experience)
+   }else{
+     experience = `
+    
+     <div class="experienceCard ">
+            <div class="experienceHead">
+              <h1>${title}</h1>
+              <h2 class="experienceDates">
+                <span class="experienceDateFrom">${startTime}</span> - <span class="experienceDateTo">${endTime}</span>
+              </h2>
+            </div>
+            <div class="experienceDescription">
+              <p>${description}</p>
+            </div>
+          </div>
+
+    `;
+   
+   }
+     DOM.contenedorExperience.insertAdjacentHTML("afterbegin", experience)
   }
 }
 
