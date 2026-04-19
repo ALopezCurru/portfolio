@@ -86,9 +86,10 @@ function showCertificates(array){
   DOM.certificateContainer.innerHTML = "";
   for(let {id, title, issued, link, img} of values){
     certificates = `
-    <a href="${link}" target="_blank"><img src="${img}" alt="${title}"></a>    
+    <a href="${link}" target="_blank"><img src="${img}" alt="${title}" class="hidden-right"></a>    
     `;
     DOM.certificateContainer.insertAdjacentHTML('afterbegin', certificates);
   }
+  inspeccionar();
 }
 showCertificates(certificates)

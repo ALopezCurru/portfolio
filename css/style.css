@@ -9,6 +9,7 @@ a {
 }
 a:hover {
   color: #e63946;
+ 
 }
 li {
   list-style: none;
@@ -51,10 +52,11 @@ header > nav {
   max-height: 100%;
 }
 header > nav > ul {
-  width: 30%;
+  width: 40%;
   height: 80px;
   justify-content: space-around !important;
 }
+
 #menuSandwich {
   display: none;
 }
@@ -369,7 +371,17 @@ width: 100%;
 #certificatesContainer > a > img{
   width: 500px;
   height: 22rem;
+  margin-left: 2%;
+
 }
+#certificatesContainer > a > img:hover{
+  
+    box-shadow: 1px 5px 10px black;
+  transform: scale(1.1);
+   transition: all 0.5s ease;
+}
+
+
 /* Contact me section */
 #modalContactForm{
   /* display: flex; */
