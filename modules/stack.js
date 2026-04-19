@@ -25,4 +25,9 @@ export const techStack = [
     name: "lookerStudio",
     img: "./Resources/img/Iconos/Looker_Studio.png",
   },
+   {
+    id: 6,
+    name: "node",
+    img: "./Resources/img/Iconos/node.png",
+  },
 ];

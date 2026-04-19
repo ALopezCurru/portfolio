@@ -37,7 +37,12 @@
     align-items: center;
     grid-row: 2;
     grid-column: 1;
+    max-width: 90%;
   }
+#introduccionFija > h1{
+  text-align: center;
+}
+
   #imagenHero {
     grid-row: 1;
     grid-column: 1;
@@ -72,5 +77,8 @@
     width: auto;
     min-width: 80%;
     max-width: 90%;
+  }
+  #tituloAboutMe{
+    text-align: center;
   }
 }

@@ -62,23 +62,25 @@ header > nav > ul {
   min-height: 40rem;
   height: auto;
   background: linear-gradient(to bottom, #0b0b0f, #1c243d);
-  /* position: relative;     */
+  position: relative;    
   color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 #introduccionFija {
-  /* position: absolute;
+  position: absolute;
+  
   top: 10vh;
   left: 4vh;
-  width: 40%; */
-  position: static;
+  width: 40%; 
+  /* position: static; */
   /* padding: 2rem;  */
   width: 100%;
   width: fit-content;
   max-width: 500px;
   display: flex;
+  /* background-color: #b42e39; */
   flex-direction: column;
 
   align-items: start;
@@ -222,23 +224,37 @@ header > nav > ul {
   overflow-x: auto;
 }
 .tarjetaProyecto {
-  width: auto;
-  min-width: 30%;
-  max-height: 300px;
+  width: 350px;
+  height: 250px;
+  max-height: 400px;
   object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid white;
+  border-radius: 10px;
+  /* border: 1px solid white; */
   gap: 1rem;
+  background-color: #0b0b0f;
+  flex-direction: column;
 }
 .tarjetaProyecto > img {
-  border-radius: 9px;
+  border-radius: 10px 10px 0px 0px;
   width: 100%;
   max-height: 250px;
+}
+.informacionProyecto{
+  margin-top: 2%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .tarjetaProyecto > .informacionProyecto > h3 {
   font-family: var(--font-secondary);
 }
 
-.tarjetaProyecto > .informacionProyecto > p {
-  font-family: var(--font-primary);
+.tarjetaProyecto > .informacionProyecto > p > a{
+  font-family: var(--font-secondary);
+}
+.codeLink{
+  font-weight: 400;
+  opacity: 40%;
+  
 }
