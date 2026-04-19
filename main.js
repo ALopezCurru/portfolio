@@ -6,7 +6,7 @@ import { projects } from "./modules/projects.js"
 import { experience } from "./modules/experience.js";
 import { certificates } from "./modules/certificates.js";
 
-// Mostrar stack en about me section
+// Mostrar stack 
 function showStackTech(array) {
   const values = Object.values(array);
   let stack = "";

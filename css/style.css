@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+html{
+  background-color: #0b0b0f;
+}
 a {
   text-decoration: none;
   color: white;
