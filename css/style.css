@@ -386,17 +386,35 @@ width: 100%;
 
 
 /* Contact me section */
+#closeContactFormModal{
+ position: absolute;
+ top: 5%;
+ right: 5%;
+ color: gray;
+ background-color: transparent;
+ border: none;
+ font-size: 2rem;
+ scroll-behavior: none;
+}
+#closeContactFormModal:hover{
+  cursor: pointer;
+}
 #modalContactForm{
   /* display: flex; */
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 35rem;
   height: auto;
-  background-color: #1c243d;
+  background: linear-gradient(to bottom, #1c243d, #0b0b0f);
 
+
+  z-index: 999;
+  position: fixed;
+  inset: 0;
 }
+
 #modalContactForm > h1{
   font-family: var(--font-secondary);
   font-size: 5rem;

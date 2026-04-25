@@ -93,3 +93,21 @@ function showCertificates(array){
   inspeccionar();
 }
 showCertificates(certificates)
+
+//We iterate over the queryselectorAll to be able to access al the items insite of It
+//We will make sure it shows the contact Me modal 
+
+DOM.btnContactMe.forEach(el => el.addEventListener('click',function(){
+  // Here we will add the function of the form
+  DOM.mainContainer.classList.add('hidden');
+  DOM.modalContactForm.classList.remove('hidden');
+  DOM.modalContactForm.classList.add('center');
+}));
+
+//With this button we will close the contact form moddal
+DOM.btnCloseContactForm.addEventListener('click',function(){
+  console.log('cht'); 
+  DOM.modalContactForm.classList.remove('center');
+   DOM.modalContactForm.classList.add('hidden');
+   DOM.mainContainer.classList.remove('hidden');
+});

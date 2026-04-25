@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   ul {
-    display: none;
+    /* display: none; */
   }
   ul > li {
     display: none;
@@ -95,6 +95,25 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
   }
+  #containerContactMe{
+    grid-template-columns: auto;
+  }
+  .comunicationChannels{
+    
+  }
+  .comunicationChannels > ul > li{
+    display: block !important;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+   
+  }
+  form > input{
+    width: 90%;
+  }
+  form > textarea{
+    width: 90%;
+  }
   .comunicationChannels > ul > li {
     color: white;
   }
@@ -104,4 +123,6 @@
   #projects{
     min-height: 50vh;
   }
+  
+
 }

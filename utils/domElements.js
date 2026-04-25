@@ -6,6 +6,7 @@ export const DOM = {
   contenedorExperience: document.querySelector('#containerLaboralExperience'),
   btnContactMe: document.querySelectorAll('.contactMeForm'),
   mainContainer: document.querySelector('#mainSection'),
-  modalContactForm: document.querySelector('#mainSection'),
-  certificateContainer: document.querySelector('#certificatesContainer')
+  modalContactForm: document.querySelector('#modalContactForm'),
+  certificateContainer: document.querySelector('#certificatesContainer'),
+  btnCloseContactForm: document.querySelector("#closeContactFormModal")
 };
