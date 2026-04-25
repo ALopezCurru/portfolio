@@ -354,6 +354,7 @@ width: 100%;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  
 }
 #certificates > h1{
   font-family: var(--font-secondary);
@@ -484,4 +485,9 @@ textarea::placeholder{
 }
 .comunicationChannels > ul > li{
   color: white;
+}
+
+section{
+  /* Se agrega el scroll-margin-top para evitar que la propiedad sticky del header entorpezca la navegacion entre elementos */
+  scroll-margin-top: 80px; /
 }

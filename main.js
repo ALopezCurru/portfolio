@@ -110,4 +110,9 @@ DOM.btnCloseContactForm.addEventListener('click',function(){
   DOM.modalContactForm.classList.remove('center');
    DOM.modalContactForm.classList.add('hidden');
    DOM.mainContainer.classList.remove('hidden');
+  //  Recorremos todos los inputs y text area para limpiarlos cuando se cierre el modal
+   const input = document.querySelectorAll('input');
+   input.forEach(input => input.value ="");
+   const txtArea = document.querySelectorAll('textarea');
+   txtArea.forEach(txtArea => txtArea.value="");
 });
